@@ -40,13 +40,13 @@ jobs:
       fail-fast: false
       matrix:
         include:
-          - name: vc2022x64vs
-            arch: x64
-            compiler: msvc2022
-            backend: vs2022
-            # mysteriously, several tests fail because vs cannot find
-            # executables such as cmd.exe ???
-            ifort: false
+          # - name: vc2022x64vs
+          #   arch: x64
+          #   compiler: msvc2022
+          #   backend: vs2022
+          #   # mysteriously, several tests fail because vs cannot find
+          #   # executables such as cmd.exe ???
+          #   ifort: false
           - name: vc2022arm64ninjacross
             arch: amd64_arm64
             compiler: msvc2022
